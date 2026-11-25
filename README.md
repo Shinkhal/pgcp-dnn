@@ -4,12 +4,12 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
 A comprehensive repository dedicated to the study and practical implementation of **Deep Neural Networks, Deep Learning, and Next-Generation Artificial Intelligence**, aligned with the PGCP-AI curriculum at the Centre for Development of Advanced Computing (C-DAC), Bengaluru.
 
-This repository serves as a centralized collection of classroom implementations, hands-on exercises, mathematical concepts, experiments, assignments, and deep learning projects.
+This repository contains classroom implementations, hands-on exercises, mathematical concepts, experiments, assignments, and deep learning projects implemented using standalone Python scripts.
 
 ---
 
@@ -26,6 +26,10 @@ This repository serves as a centralized collection of classroom implementations,
 | Practical | 50 Hours |
 | Self-Learning | 30 Hours |
 | Programming Language | Python |
+| Development Environment | Visual Studio Code |
+| Implementation Format | Python Scripts (.py) |
+
+---
 
 ## 🎯 Learning Objectives
 
@@ -35,9 +39,10 @@ This repository serves as a centralized collection of classroom implementations,
 - Build deep learning architectures using TensorFlow, Keras and PyTorch.
 - Apply regularization and optimization techniques.
 - Develop CNN, RNN, LSTM and GAN architectures.
-- Understand generative AI, diffusion models and autoencoders.
+- Explore generative AI, diffusion models and autoencoders.
 - Interpret model predictions using Explainable AI.
-- Explore embeddings, vector databases and Retrieval-Augmented Generation.
+- Understand embeddings, vector databases and Retrieval-Augmented Generation.
+- Develop modular, reusable and maintainable Python implementations.
 
 ---
 
@@ -47,7 +52,6 @@ This repository serves as a centralized collection of classroom implementations,
 
 - Artificial Neural Networks
 - Single-layer Neural Networks
-- Perceptron
 - Applications of Neural Networks
 - Activation Functions
   - Sigmoid
@@ -72,7 +76,7 @@ This repository serves as a centralized collection of classroom implementations,
 - Tensor Operations
 - Automatic Differentiation
 - TensorFlow vs PyTorch
-- Neural Network Implementation using Frameworks
+- Neural Network Implementation
 
 ### 04. Sigmoid-Based Classification
 
@@ -154,7 +158,6 @@ This repository serves as a centralized collection of classroom implementations,
 - Discriminator Architecture
 - Adversarial Training
 - Diffusion Model Intuition
-- Generative Modelling Applications
 
 ### 12. Advanced Deep Learning and Emerging Trends
 
@@ -184,14 +187,14 @@ This repository serves as a centralized collection of classroom implementations,
 | Machine Learning | Scikit-learn |
 | Data Visualization | Matplotlib, Seaborn |
 | Explainable AI | SHAP, Grad-CAM |
-| Development Environment | VS Code, Jupyter Notebook |
+| Development Environment | Visual Studio Code |
+| Dependency Management | pip, venv |
 | Version Control | Git, GitHub |
+| Implementation | Standalone Python Scripts |
 
 ---
 
-## 💻 Practical Implementations
-
-The repository is intended to cover the following practical implementations throughout the course.
+## 💻 Practical Implementation Roadmap
 
 | No. | Implementation |
 |---|---|
@@ -223,23 +226,87 @@ The repository is intended to cover the following practical implementations thro
 
 ---
 
-## 🚀 Getting Started
+## 📐 Mathematical Foundations
+
+- Linear Algebra
+- Matrix and Vector Operations
+- Differential Calculus
+- Partial Derivatives
+- Chain Rule
+- Probability and Statistics
+- Gradient-Based Optimization
+- Loss Function Minimization
+- Vector and Matrix Norms
+
+---
+
+## ⚙️ Implementation Approach
+
+All practical implementations are developed as standalone Python scripts, following a modular and structured programming approach.
+
+Each implementation may include:
+
+1. Library imports and configuration.
+2. Dataset loading and exploration.
+3. Data preprocessing and feature engineering.
+4. Neural network architecture definition.
+5. Model training and optimization.
+6. Model evaluation and visualization.
+7. Model persistence and inference.
+
+Implementations emphasize:
+
+- Object-Oriented Programming where appropriate.
+- Reusable functions and classes.
+- Modular code organization.
+- Type hints and documentation.
+- Reproducible experiments.
+- Independent script execution.
+- Clean and maintainable code.
+
+A typical implementation follows the structure:
+
+```python
+def load_data():
+    pass
+
+
+def preprocess_data():
+    pass
+
+
+def build_model():
+    pass
+
+
+def train_model():
+    pass
+
+
+def evaluate_model():
+    pass
+
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
+```
+
+---
+
+## 🚀 Environment Setup
 
 ### Prerequisites
 
 - Python 3.11 or 3.12 recommended
-- Git
-- Jupyter Notebook or VS Code
-- Basic understanding of Python, Machine Learning, Linear Algebra, Probability and Statistics
+- Visual Studio Code
+- VS Code Python extension
+- Basic understanding of Python, Machine Learning and Mathematics
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/Shinkhal/pgcp-dnn.git
-cd pgcp-dnn
-```
-
-### 2. Create a Virtual Environment
+### 1. Create a Virtual Environment
 
 ```bash
 python -m venv .venv
@@ -251,35 +318,51 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Windows**
+**Windows PowerShell**
 
 ```powershell
-.venv\Scripts\activate
+.venv\Scripts\Activate.ps1
 ```
 
-### 3. Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 python -m pip install --upgrade pip
-
-pip install numpy pandas matplotlib seaborn scikit-learn tensorflow torch torchvision jupyter ipykernel shap
 ```
-
-For GPU-accelerated training, follow the official TensorFlow and PyTorch installation instructions appropriate for your operating system, GPU and CUDA environment.
-
-### 4. Launch Jupyter Notebook
 
 ```bash
-jupyter notebook
+pip install numpy pandas matplotlib seaborn scikit-learn tensorflow torch torchvision shap
 ```
 
-Alternatively, open the repository in Visual Studio Code.
+Once a `requirements.txt` file is available, dependencies can be installed using:
+
+```bash
+pip install -r requirements.txt
+```
+
+For GPU-accelerated training, refer to the official TensorFlow and PyTorch installation documentation for compatible CUDA configurations.
+
+### 3. Configure Visual Studio Code
 
 ```bash
 code .
 ```
 
-Select the virtual environment as the Python interpreter before executing notebooks or Python scripts.
+Select the virtual environment as the Python interpreter:
+
+- Open the Command Palette using `Ctrl + Shift + P`.
+- Select `Python: Select Interpreter`.
+- Choose the interpreter from `.venv`.
+
+### 4. Execute Python Scripts
+
+Navigate to the relevant implementation directory and execute the desired Python file.
+
+```bash
+python filename.py
+```
+
+All implementations can be executed directly from the terminal or through the VS Code Python debugger.
 
 ---
 
@@ -291,28 +374,13 @@ Datasets relevant to the course include:
 - Fashion-MNIST
 - American Sign Language Dataset
 - Time Series Datasets
-- Binary and Multiclass Classification Datasets
+- Binary Classification Datasets
+- Multiclass Classification Datasets
 - Synthetic Datasets
 - Whale Identification Dataset
 - Document Collections for RAG
 
-Large datasets, trained model weights and generated artifacts should not be committed directly to the repository.
-
----
-
-## 📖 Mathematical Foundations
-
-The course builds upon the following mathematical concepts:
-
-- Linear Algebra
-- Matrix and Vector Operations
-- Differential Calculus
-- Partial Derivatives
-- Chain Rule
-- Probability and Statistics
-- Gradient-Based Optimization
-- Loss Function Minimization
-- Vector and Matrix Norms
+Large datasets, virtual environments, trained model weights, checkpoints and generated artifacts should not be committed directly to the repository.
 
 ---
 
@@ -327,7 +395,7 @@ The course builds upon the following mathematical concepts:
 
 ---
 
-## 📚 References and Learning Resources
+## 📖 References and Learning Resources
 
 ### Recommended Books
 
@@ -339,14 +407,15 @@ The course builds upon the following mathematical concepts:
 
 ### Official Documentation
 
+- [Python](https://docs.python.org/3/)
 - [TensorFlow](https://www.tensorflow.org/)
 - [PyTorch](https://pytorch.org/docs/stable/index.html)
 - [Keras](https://keras.io/)
 - [NumPy](https://numpy.org/doc/)
+- [Pandas](https://pandas.pydata.org/docs/)
 - [Scikit-learn](https://scikit-learn.org/)
 - [SHAP](https://shap.readthedocs.io/)
 - [Matplotlib](https://matplotlib.org/)
-- [Jupyter](https://jupyter.org/)
 
 ### Additional Learning Resources
 
@@ -356,36 +425,5 @@ The course builds upon the following mathematical concepts:
 - [Hugging Face](https://huggingface.co/learn)
 
 ---
-
-## 🤝 Contributions
-
-Suggestions, improvements, alternative implementations and discussions related to Deep Learning are welcome.
-
-Feel free to fork the repository, raise an issue or submit a pull request.
-
----
-
-## 👨‍💻 Author
-
-**Shinkhal Sinha**
-
-PGCP-AI | C-DAC Bengaluru  
-B.Tech Computer Science and Engineering | LPU '26  
-Former Software Development Engineer Trainee | VibeInn Techverse  
-Former React Developer Intern | Celebal Technologies
-
-[![GitHub](https://img.shields.io/badge/GitHub-Shinkhal-181717?style=for-the-badge&logo=github)](https://github.com/Shinkhal)
-
----
-
-## ⚠️ Disclaimer
-
-This repository is maintained for educational, academic and research purposes. It contains independent learning implementations aligned with the C-DAC PGCP-AI curriculum and is not an official repository of C-DAC.
-
-Third-party datasets, libraries and reference materials remain subject to their respective licenses.
-
----
-
-**⭐ If you find this repository useful, consider giving it a star!**
 
 *Learning, implementing and exploring the foundations of modern Artificial Intelligence.*
